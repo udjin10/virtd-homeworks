@@ -55,7 +55,17 @@ docker ps,
 ```
 Vagrantfile из лекции и код ansible находятся в [папке](https://github.com/netology-code/virt-homeworks/tree/virt-11/05-virt-02-iaac/src).
 
-Примечание. Если Vagrant выдаёт ошибку:
+Примечания:
+- Если Vagrant выдаёт ошибку:
+```
+Vagrant gathered an unknown Ansible version:
+and falls back on the compatibility mode '1.8'.
+```  
+Подберите "более старые" версии ПО. Например vagrant 2.3.4, ansible 2.9.27 или 2.15.1 . 
+
+---
+
+- Если Vagrant выдаёт ошибку:
 ```
 URL: ["https://vagrantcloud.com/bento/ubuntu-20.04"]     
 Error: The requested URL returned error: 404:
